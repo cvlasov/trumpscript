@@ -1,0 +1,39 @@
+tweets is 1000000
+zero, is 1000000 minus 1000000;
+
+as long as, fortune < 100000000; do:
+  hotels is tweets
+  
+  as long as, not hotels < 3000000; do:
+    hotels is, hotels - 3000000;
+  !
+  
+  apprentices is tweets
+  
+  as long as, not apprentices < 5000000; do:
+    apprentices is, apprentices - 5000000;
+  !
+  
+  steaks is tweets
+  
+  as long as not steaks < 15000000; do:
+    steaks is, steaks - 15000000;
+  !
+  
+  if, hotels is zero?; do:
+    say "fizzbuzz"
+  !
+  else do:
+    if, apprentices is zero?; do:
+      say "fizz"
+    !
+    
+    if, steaks is zero?; do:
+      says "buzz"
+    !
+  !
+  
+  tweets is, tweets + 1000000;
+!
+
+America is great.
